@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ListCSS = styled.ul`
-  width: 60%; 
+  width: 60%;
 `;
 
-export { ListCSS }
+export { ListCSS };
