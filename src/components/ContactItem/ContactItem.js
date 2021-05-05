@@ -1,14 +1,25 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import { ItemCSS } from "./styledContactItem";
 
-const ContactItem = ({ name, number, onDelete }) => {
+const ContactItem = ({ name, number, removeContact }) => {
   return (
     <ItemCSS>
       {name}: {number}
-      <button onClick={onDelete}>Delete</button>
+      <button
+        onClick={(e) => {
+        }}
+      >
+        Delete
+      </button>
     </ItemCSS>
   );
 };
 
-export { ContactItem };
+const mapStateToProps = (state) => ({
+  state,
+});
+
+
+export default connect(mapStateToProps)(ContactItem);
